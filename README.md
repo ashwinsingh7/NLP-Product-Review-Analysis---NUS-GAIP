@@ -8,7 +8,10 @@
 1. **Sentiment Analysis** – to understand customer sentiment in product reviews.  
 2. **Fake Review Detection** – to identify and filter computer-generated reviews that mislead consumers.
 
-My team consisted of five members, each leading a different segment of the project. I focused on building and evaluating the classical machine learning pipeline for **fake review detection using Support Vecotr Machines**.
+My team consisted of five members, each leading a different segment of the project. I focused on building and evaluating the classical machine learning pipeline for fake review detection using Support Vectorr Machines.
+
+<img width="350" alt="Screenshot 2025-03-29 at 8 11 40 PM" src="https://github.com/user-attachments/assets/df870301-5359-444c-aad1-270e667d4a30" />
+
 
 ---
 
@@ -18,6 +21,9 @@ My team consisted of five members, each leading a different segment of the proje
 - Help businesses extract real customer sentiment
 - Compare traditional and neural models for performance and interpretability
 - Build solutions that are practical for integration in real-world systems
+
+<img width="350" alt="Screenshot 2025-03-29 at 8 12 58 PM" src="https://github.com/user-attachments/assets/87fd7659-d0b5-4230-b886-d12c0bd154fc" />
+
 
 ---
 
@@ -31,6 +37,9 @@ We implemented and compared the performance of three modeling approaches across 
 | **Fake Review Detection** | Support Vector Machine (SVM) | LSTM (RNN)     |
 
 **LSTM models** showed state-of-the-art performance due to their ability to capture contextual dependencies in text. However, our classical models provided competitive accuracy with lower computational cost.
+
+<img width="400" alt="Screenshot 2025-03-29 at 8 12 17 PM" src="https://github.com/user-attachments/assets/0a7e24cf-a998-41b7-91ee-9b1918a88be5" />
+
 
 ## Full Architecture
 
@@ -46,7 +55,6 @@ We implemented and compared the performance of three modeling approaches across 
 - **Models**: Support Vector Machine (SVM), LSTM
 - **Dataset**: 40K reviews (Salminen et al.)
 - **Accuracy**: SVM (~87%), LSTM (~96%)
-
 
 ---
 
@@ -71,6 +79,9 @@ Implemented a structured pipeline including:
 
 These steps ensured cleaner, normalised inputs for model training and improved generalization.
 
+<img width="400" alt="Screenshot 2025-03-29 at 8 12 02 PM" src="https://github.com/user-attachments/assets/979f2fad-831a-4b37-896d-d1a9afa01d84" />
+
+
 ### Feature Engineering
 
 Used **CountVectorizer** to implement the **Bag-of-Words model**:
@@ -93,6 +104,9 @@ Used **CountVectorizer** to implement the **Bag-of-Words model**:
 | Precision (Fake) | ~87% |
 | Recall (Fake)    | ~88% |
 | F1-score (Fake)  | ~87% |
+
+<img width="400" alt="Screenshot 2025-03-29 at 8 12 40 PM" src="https://github.com/user-attachments/assets/03c9e58f-c7a9-4eaa-a232-33a10c796bc4" />
+
 
 ### Result Summary
 
