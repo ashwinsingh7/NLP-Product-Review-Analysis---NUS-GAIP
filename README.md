@@ -88,7 +88,7 @@ Used **CountVectorizer** to implement the **Bag-of-Words model**:
 
 - This involved creating a vocabulary of known words and then representing each review as a vector (of word frequencies) of its constituent words.
 
-### Modeling with SVM
+### Modelling with SVM
 
 - Trained an `SVC` with a linear kernel.
 - Applied **regularization (C parameter)** to balance margin maximization and training performance.
