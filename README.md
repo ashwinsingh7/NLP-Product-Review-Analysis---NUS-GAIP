@@ -3,12 +3,12 @@
 
 ## Overview
 
-**ReviewRadar** is a machine learning system designed to enhance the quality and credibility of product reviews on e-commerce platforms. Developed as part of the **Global Academic Internship Programme (GAIP)** at the **National University of Singapore (NUS)** held in the Summer of 2024. The project combines **Natural Language Processing (NLP)** and **supervised learning techniques** to solve two critical problems in online commerce:
+This project, developed as part of the **Global Academic Internship Programme (GAIP)** at the **National University of Singapore (NUS)** held in the Summer of 2024, combines **Natural Language Processing (NLP)** and **supervised learning techniques** to address two critical problems in online commerce:
 
 1. **Sentiment Analysis** – to understand customer sentiment in product reviews.  
 2. **Fake Review Detection** – to identify and filter computer-generated reviews that mislead consumers.
 
-My team consisted of five members, each leading a different segment of the project. I focused on building and evaluating the classical machine learning pipeline for fake review detection using Support Vectorr Machines.
+My team consisted of five members, each leading a different segment of the project. I focused on building and evaluating the classical machine learning pipeline for fake review detection using Support Vector Machines, and also did some work on sentiment analysis using Logistic Regression.
 
 <img width="350" alt="Screenshot 2025-03-29 at 8 11 40 PM" src="https://github.com/user-attachments/assets/df870301-5359-444c-aad1-270e667d4a30" />
 
