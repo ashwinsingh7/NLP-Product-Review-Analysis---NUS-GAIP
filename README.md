@@ -3,7 +3,7 @@
 
 ## Overview
 
-This project, developed as part of the **Global Academic Internship Programme (GAIP)** at the **National University of Singapore (NUS)** held in the Summer of 2024, combines **Natural Language Processing (NLP)** and **supervised learning techniques** to address two critical problems in online commerce:
+This project, developed as part of the **Global Academic Internship Programme (GAIP)** at the **National University of Singapore (NUS)**, combines **Natural Language Processing (NLP)** and **supervised learning techniques** to address two critical problems in online commerce:
 
 1. **Sentiment Analysis** – to understand customer sentiment in product reviews.  
 2. **Fake Review Detection** – to identify and filter computer-generated reviews that mislead consumers.
@@ -19,7 +19,7 @@ My team consisted of five members, each leading a different segment of the proje
 
 - Improve consumer trust by filtering computer-generated reviews
 - Help businesses extract real customer sentiment
-- Compare traditional and neural models for performance and interpretability
+- Compare classical ML models with neural network models for performance and interpretability
 - Build solutions that are practical for integration in real-world systems
 
 <img width="350" alt="Screenshot 2025-03-29 at 8 12 58 PM" src="https://github.com/user-attachments/assets/87fd7659-d0b5-4230-b886-d12c0bd154fc" />
@@ -64,8 +64,9 @@ I led the entire pipeline for fake review classification using **Support Vector 
 
 ### Dataset
 
-- **40,000 Amazon product reviews**, with equal balance of real and fake entries.
-- Fake reviews were generated using **GPT-2**, trained by Joni Salminen et al. ([dataset link](https://osf.io/tyue9/)).
+- **~40K Amazon product reviews**, with equal balance of real and fake entries.
+- Fake reviews were generated using **GPT-2**, trained by Joni Salminen et al. ([dataset link](https://osf.io/tyue9/)) in their 
+[2022 paper](https://www.sciencedirect.com/science/article/pii/S0969698921003374?via%3Dihub).
 
 ### Data Preprocessing
 
@@ -86,12 +87,12 @@ These steps ensured cleaner, normalised inputs for model training and improved g
 
 Used **CountVectorizer** to implement the **Bag-of-Words model**:
 
-- This involved creating a vocabulary of known words and then representing each review as a vector (of word frequencies) of its constituent words.
+- This involved creating a vocabulary of known words and then representing each review as a sparse vector (comprising word frequencies of its constituent words).
 
 ### Modelling with SVM
 
 - Trained an `SVC` with a linear kernel.
-- Applied **regularization (C parameter)** to balance margin maximization and training performance.
+- Applied **regularization (C parameter)** to balance margin maximisation and training loss.
 
 ### Evaluation & Validation
 
@@ -110,16 +111,23 @@ Used **CountVectorizer** to implement the **Bag-of-Words model**:
 
 ### Result Summary
 
-The classical pipeline achieved high performance, validating that **SVM + BoW** serves as a strong baseline for fake review detection—even against more complex neural network approaches.
+The pipeline achieved reasonably high performance, validating that **SVM + BoW** serves as a strong baseline for fake review detection.
 
-Additionally, I also contributed to the sentiment analysis task using logistic regression
+Additionally, I also contributed to the sentiment analysis task using logistic regression and Bag-of-Words feature engineering.
+
+<br>
+
+### Future Exploration
+
+Implement the [2022 paper](https://www.sciencedirect.com/science/article/pii/S0969698921003374?via%3Dihub) from which the dataset was taken and try to replicate their results and understand the theoretical underpinnings of the models they used.
+
 
 
 ### Areas for Improvement - SVM Fake Review Detection
 
-- The dataset was sourced from a 2018 research study. Since then, large language models (LLMs) have advanced significantly, making AI-generated reviews more realistic and harder to distinguish from human-written content.
+- The dataset was sourced from a 2022 research study. Since then, large language models (LLMs) have advanced significantly, making AI-generated reviews more realistic and harder to distinguish from human-written content.
 
-- This project employed a purely machine learning-based approach, and while the SVM classifier performed reasonably well, its decision-making process lacks interpretability. Combining this with rule-based heuristics or explainable AI (XAI) methods could enhance both accuracy and trust in predictions. Additionally, an integration of ML with other non-ML approaches (like metadata and behavioral pattern analysis, linguistic and stylometric rules, rule-based keyword filters, IP address and geolocation filtering, temporal and network analysis, verification and provenance checks etc.) is likely to lead to to a more robust and effective fake review detection system.
+- This project employed a purely machine learning-based approach, and while the SVM classifier performed reasonably well, its decision-making process lacks interpretability. Combining this with rule-based heuristics or explainable AI (XAI) methods could enhance both accuracy and trust in predictions. Additionally, an integration of ML with other non-ML approaches (like metadata and behavioral pattern analysis, linguistic and stylometric rules, rule-based keyword filters, IP address and geolocation filtering, temporal and network analysis, verification and provenance checks etc.) is likely to lead to to a more robust and effective fake review detection system. One can also look into other models that may perform better than SVMs on the classification task.
 
 - The model was trained on a relatively limited and static dataset. With access to larger, more diverse datasets and greater computational resources, the model’s generalizability and robustness could be significantly improved.
 
