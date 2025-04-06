@@ -10,7 +10,7 @@ This project, developed as part of the **Global Academic Internship Programme (G
 
 My team consisted of five members, each leading a different segment of the project. I focused on building and evaluating the classical machine learning pipeline for fake review detection using Support Vector Machines, and also did some work on sentiment analysis using Logistic Regression.
 
-Fake Review Detection colab notebook - https://colab.research.google.com/drive/14oEbjNjkdIbtJv_GfU8LMm0tYwW96cS3?usp=sharing
+Fake Review Detection colab notebook - https://drive.google.com/file/d/1wI_IW5JY2HD862A3Qapre1CMZbXxIYzt/view?usp=sharing
 
 <img width="350" alt="Screenshot 2025-03-29 at 8 11 40 PM" src="https://github.com/user-attachments/assets/df870301-5359-444c-aad1-270e667d4a30" />
 
